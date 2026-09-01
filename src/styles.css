@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172019;
+  background: #f6f4ef;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+.nav { height: 78px; display:flex; align-items:center; justify-content:space-between; padding:0 6vw; background:#f6f4ef; position:sticky; top:0; z-index:10; border-bottom:1px solid #dfddd5; }
+.brand { font-size:21px; font-weight:800; letter-spacing:-.04em; }
+.brand span { font-weight:400; }
+.nav nav { display:flex; gap:30px; font-size:14px; color:#5f665f; }
+.nav-cta { background:#172019; color:white; padding:11px 18px; border-radius:999px; font-size:14px; }
+.hero { min-height:690px; display:grid; grid-template-columns:1.15fr .85fr; gap:7vw; align-items:center; padding:90px 10vw 100px; background:linear-gradient(135deg,#f6f4ef 0%,#e7eee3 100%); }
+.eyebrow { font-size:11px; letter-spacing:.16em; font-weight:800; color:#657064; margin-bottom:18px; }
+h1,h2,h3,p { margin-top:0; }
+h1 { font-size:clamp(52px,7vw,94px); line-height:.93; letter-spacing:-.07em; margin-bottom:30px; }
+h1 em { font-family:Georgia, serif; font-weight:400; color:#61745e; }
+.hero-copy > p { max-width:600px; font-size:18px; line-height:1.65; color:#626a62; }
+.hero-actions { display:flex; align-items:center; gap:24px; margin-top:34px; }
+.button { border:0; cursor:pointer; padding:14px 21px; border-radius:999px; font-weight:750; transition:.2s; }
+.button:hover { transform:translateY(-2px); }
+.button.primary { background:#657b60; color:white; }
+.button.dark { background:#172019; color:white; width:100%; }
+.button:disabled { opacity:.55; cursor:not-allowed; transform:none; }
+.text-link { font-weight:700; font-size:14px; }
+.hero-card { background:#172019; color:white; border-radius:30px; padding:42px; box-shadow:25px 25px 0 #cfd8c9; position:relative; }
+.floating-tag { position:absolute; top:20px; right:22px; font-size:9px; letter-spacing:.12em; color:#bdcdb8; }
+.card-number { font-size:12px; color:#9aac94; margin-top:10px; }
+.hero-card h3 { margin:4px 0 6px; font-size:19px; }
+.hero-card p { color:#b6c0b3; line-height:1.55; font-size:14px; margin-bottom:18px; }
+.mini-line { height:1px; background:#3a443c; }
+.section { padding:110px 8vw; }
+.section-head { display:flex; justify-content:space-between; align-items:end; margin-bottom:42px; gap:30px; }
+.section-head h2, .process h2, .registration h2 { font-size:clamp(38px,5vw,64px); letter-spacing:-.055em; line-height:.98; margin:0; }
+.section-head > p { max-width:320px; color:#6b716b; line-height:1.6; }
+.course-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.course-card { background:#fff; border:1px solid #e4e1d9; border-radius:24px; padding:28px; display:flex; flex-direction:column; min-height:420px; }
+.course-top { display:flex; justify-content:space-between; font-size:12px; color:#74806f; text-transform:uppercase; letter-spacing:.08em; }
+.course-top strong { color:#172019; letter-spacing:0; font-size:14px; }
+.course-card h3 { font-size:28px; letter-spacing:-.04em; margin:32px 0 12px; }
+.course-card p { color:#6b716b; line-height:1.6; min-height:80px; }
+.duration { border-top:1px solid #e9e6df; padding-top:16px; font-size:13px; font-weight:700; }
+.course-card ul { list-style:none; padding:0; margin:18px 0 24px; line-height:1.8; color:#5d665d; font-size:13px; flex:1; }
+.process { background:#172019; color:#fff; padding:110px 8vw; }
+.process .eyebrow { color:#9aac94; }
+.process h2 { max-width:760px; margin-bottom:70px; }
+.steps { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; }
+.step { border-top:1px solid #4a554c; padding-top:20px; }
+.step span { color:#9aac94; font-size:12px; }
+.step h3 { margin:38px 0 10px; font-size:20px; }
+.step p { color:#b9c0b8; line-height:1.6; font-size:14px; }
+.registration { padding:110px 10vw; display:grid; grid-template-columns:1fr 460px; gap:8vw; align-items:center; background:#e3ebdf; }
+.registration > div > p { color:#657064; line-height:1.6; max-width:480px; margin-top:22px; }
+.selected-course { display:flex; justify-content:space-between; background:#f6f4ef; padding:16px 18px; border-radius:14px; margin-top:30px; max-width:480px; font-size:14px; }
+.form-card { background:white; border-radius:24px; padding:28px; box-shadow:0 16px 50px rgba(23,32,25,.08); }
+.form-card label { display:block; font-size:12px; font-weight:800; margin-bottom:16px; }
+.form-card input { display:block; width:100%; border:1px solid #dcdad3; background:#faf9f6; border-radius:12px; padding:13px 14px; margin-top:7px; outline:none; }
+.form-card input:focus { border-color:#657b60; box-shadow:0 0 0 3px #657b6020; }
+.full { width:100%; margin-top:8px; }
+.form-card small { display:block; color:#81867f; line-height:1.5; margin-top:14px; font-size:10px; }
+.error { background:#fff0ee; color:#a43f32; padding:11px 12px; border-radius:10px; margin-bottom:12px; font-size:12px; }
+.faq { max-width:1000px; margin:auto; }
+.faq-list { border-top:1px solid #dcdad3; }
+.faq-item { border-bottom:1px solid #dcdad3; }
+.faq-item button { border:0; background:none; width:100%; display:flex; justify-content:space-between; text-align:left; padding:24px 0; cursor:pointer; font-weight:750; }
+.faq-item button b { font-size:20px; font-weight:400; }
+.faq-item p { color:#697069; line-height:1.65; max-width:800px; padding:0 0 24px; margin:0; }
+footer { padding:28px 8vw; display:flex; justify-content:space-between; font-size:12px; color:#707770; border-top:1px solid #dedbd3; }
+footer span:first-child { font-weight:800; color:#172019; }
+@media (max-width: 900px) {
+  .nav nav { display:none; }
+  .hero, .registration { grid-template-columns:1fr; }
+  .course-grid { grid-template-columns:1fr; }
+  .steps { grid-template-columns:1fr 1fr; }
+  .hero { padding:70px 7vw; }
+}
+@media (max-width: 560px) {
+  .nav { padding:0 5vw; }
+  .nav-cta { display:none; }
+  .hero-card { padding:30px; }
+  .section, .process, .registration { padding:75px 6vw; }
+  .section-head { display:block; }
+  .section-head > p { margin-top:20px; }
+  .steps { grid-template-columns:1fr; }
+  footer { display:block; }
+  footer span { display:block; margin:5px 0; }
+}
